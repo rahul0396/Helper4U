@@ -41,7 +41,8 @@ function Tesimonial() {
       };
       
   return (
-<div className="w-full m-auto">
+<div className="w-full m-auto bg-slate-100 ">
+    <div className="text-center"> <h3 className="text-3xl font-bold py-4">Customer Testimonials</h3></div>
   <div className="mt-20">
     <Slider {...settings}>
       {data.map((d) => (

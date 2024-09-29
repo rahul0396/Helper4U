@@ -34,7 +34,7 @@ function Header() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8 items-center">
-            <a href="#" className="text-gray-700 hover:text-gray-900">
+            <a href="#" className="text-gray-700 font-bold hover:text-gray-900">
               Home
             </a>
 
@@ -42,7 +42,7 @@ function Header() {
             <div className="relative">
               <button
                 onClick={toggleHiringDropdown}
-                className="text-gray-700 hover:text-gray-900 inline-flex items-center"
+                className="text-gray-700 hover:text-gray-900  font-bold inline-flex items-center"
               >
                 Hiring
                 <svg
@@ -95,7 +95,7 @@ function Header() {
             <div className="relative">
               <button
                 onClick={toggleVerificationDropdown}
-                className="text-gray-700 hover:text-gray-900 inline-flex items-center"
+                className="text-gray-700 hover:text-gray-900 font-bold inline-flex items-center"
               >
                 Verification
                 <svg
@@ -173,13 +173,13 @@ function Header() {
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden">
-            <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+            <a href="#" className="block px-4 py-2 font-bold text-gray-700 hover:bg-gray-100">
               Home
             </a>
             <div className="relative">
               <button
                 onClick={toggleHiringDropdown}
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                className="block px-4 py-2 text-gray-700 font-bold hover:bg-gray-100"
               >
                 Hiring
               </button>
@@ -216,7 +216,7 @@ function Header() {
             <div className="relative">
               <button
                 onClick={toggleVerificationDropdown}
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                className="block px-4 py-2 text-gray-700 font-bold hover:bg-gray-100"
               >
                 Verification
               </button>

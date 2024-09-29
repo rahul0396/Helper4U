@@ -5,6 +5,7 @@ import './index.css'
 import Header from './Header.jsx'
 import Footer from'./Footer.jsx'
 import Tesimonial from './Tesimonial.jsx'
+import Service from './Service.jsx'
 
 
 createRoot(document.getElementById('root')).render(
@@ -12,6 +13,7 @@ createRoot(document.getElementById('root')).render(
      <Header/>
     <App />
     <Tesimonial/>
+    <Service/>
    <Footer/>
   </StrictMode>,
 )
