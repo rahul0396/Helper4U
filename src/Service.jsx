@@ -25,36 +25,40 @@ const Service = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     arrows: false,
-    slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToShow: 5,
+    slidesToScroll: 4,
     // autoplay: true, // Correctedkey
-    // autoplaySpeed: 1000, // Optional: Set autoplay speed (default is 3000 ms)
+    // autoplaySpeed: 2000, // Optional: Set autoplay speed (default is 3000 ms)
   };
   return (
-    <div className="h-screen bg-slate-100 pt-20 ">
-      <div className=" w-full  mx-auto  py-20">
-      <div className="text-center font-bold text-3xl py-10"> <h2> Helper4U Services</h2>
-      </div>
+    <div className="h-screen bg-slate-100 flex flex-wrap w-full mahak ">
+      <div className=" w-full ">
+        <div className="text-center font-bold text-3xl py-10">
+      
+          <h2> Helper4U Services</h2>
+        </div>
         <Slider {...settings}>
           {data.map((item, index) => {
-           
-           return (
-                
-              <div key={index} className="bg-slate-100  border rounded-md hover:scale-110 transition-all duration-500 cursor-pointer ">
-                
-                <div >
-                  <img 
-                    src={item.image}
-                    className="w-full  object-contain block m-auto p-3"
-                  />
-                </div>
-                <div>
-                  <p className="font-bold text-lg py-4 text-center bg-gray-100 ">
-                    {" "}
-                    {item.title}
-                  </p>
+            return (
+              <div
+                key={index}
+                className="bg-slate-100 flex flex-wrap py-5 w-full "
+              >
+                <div className="border w-full rounded-md  grid  hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer">
+                  <div>
+                    <img
+                      src={item.image}
+                      className="w-full  object-contain block  p-3"
+                    />
+                  </div>
+                  <div>
+                    <p className="font-bold text-lg py-3 text-center bg-gray-100 ">
+                      {" "}
+                      {item.title}
+                    </p>
+                  </div>
                 </div>
               </div>
             );
@@ -62,6 +66,7 @@ const Service = () => {
         </Slider>
       </div>
     </div>
+    
   );
 };
 

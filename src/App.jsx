@@ -15,7 +15,7 @@ function App() {
           </p>
           <div className="grid grid-cols-2 ">
             <div>
-              <form action="#">
+              <form action="#"> 
                 <input
                   type="text"
                   placeholder="Enter Your Pincode"

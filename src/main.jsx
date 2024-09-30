@@ -3,9 +3,10 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import Header from './Header.jsx'
-import Footer from'./Footer.jsx'
+// import Footer from'./Footer.jsx'
 import Tesimonial from './Tesimonial.jsx'
 import Service from './Service.jsx'
+import Why from './Why.jsx'
 
 
 createRoot(document.getElementById('root')).render(
@@ -14,6 +15,7 @@ createRoot(document.getElementById('root')).render(
     <App />
     <Tesimonial/>
     <Service/>
-   <Footer/>
+    <Why/>
+   {/* <Footer/> */}
   </StrictMode>,
 )
