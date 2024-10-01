@@ -48,10 +48,10 @@ function Tesimonial() {
         <h3 className="text-3xl font-bold pt-4">Customer Testimonials</h3>
       </div>
       <div className="pt-20 ">
-        <Slider {...settings}>
+        <Slider {...settings} className="">
           {data.map((d) => (
-            <div className="px-4 py-4 flex-col items-center justify-center mx-8 bg-white ">
-              {" "}
+            <div className="px-4 py-4 flex-col items-center justify-center slide_testimonial  mx-8 shadow-2xl bg-slate-100 ">
+              
               {/* Add margin or gap manually */}
               <div>
                 <div className="text-base font-bold py-3 ">
