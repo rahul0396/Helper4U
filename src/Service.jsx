@@ -55,7 +55,7 @@ const Service = () => {
                   </div>
                   <div>
                     <p className="font-bold text-lg py-3 text-center bg-gray-100 ">
-                      {" "}
+                      {""}
                       {item.title}
                     </p>
                   </div>

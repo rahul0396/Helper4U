@@ -8,7 +8,7 @@ function App() {
             Need a Verified Helper?
             <span className="text-4xl font-bold text-red-600">
               Explore our Options.
-            </span>{" "}
+            </span>{" "}  
           </h1>
           <p className="text-3xl tracking-wide py-4 ">
             Because You Deserve a Stress-Free Life.
