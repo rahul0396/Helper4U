@@ -82,3 +82,21 @@ export const Services = () => {
     </div>
   );
 };
+
+
+export const Helper4UServiceCard = ({ title, link, imageSrc, altText }) => {
+  return (
+    <div className="w-[50%]">
+      <div className="w-[100%] shadow-xl pt-2">
+        <a href={link}>
+          <div className="border border-b-gray-300 p-2 bg-slate-100 rounded">
+            <img src={imageSrc} className="w-[95%] mx-auto" alt={altText} />
+            <p className="p-2 m-2 text-bold md:text-sm lg:text-base text-sm sm:text-base text-center">
+              {title}
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  );
+};

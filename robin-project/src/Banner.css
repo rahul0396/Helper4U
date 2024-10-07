@@ -1,58 +1,100 @@
 /*Banner */
 
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 .why-choose-us {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #f1f5f9;
-  }
-  
-  .why-choose-us h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    font-weight: bold;
-  }
-  
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f1f5f9;
+}
+
+.why-choose-us h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center ;
+  gap: 80px;
+}
+
+.card {
+  background-color: #3ab0ff; 
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 252px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  margin-top: 20px;
+  height: 272px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  background-color: #0284C7;
+}
+
+.card .icon {
+  margin-bottom: 20px;
+}
+
+.card img {
+  width: 50px;
+  height: 50px;
+  margin: 12px 0px 0px 0px;
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #1F2927;
+}
+
+@media screen and (max-width: 1020px) {
+
+
   .card-container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 48px;
+    justify-content: center ;
+    gap: 10px;
   }
-  
   .card {
     background-color: #3ab0ff; 
     color: white;
     padding: 20px;
     border-radius: 15px;
-    max-width: 250px;
+    flex-basis: 45%;
     text-align: center;
     transition: transform 0.3s ease;
     margin-top: 20px;
+    height: 272px;
   }
-  
-  .card:hover {
-    transform: scale(1.1);
-    background-color: #0284C7;
-  }
-  
-  .card .icon {
-    margin-bottom: 20px;
-  }
-  
-  .card img {
-    width: 50px;
-    height: 50px;
-    margin: 12px 0px 0px 0px;
-  }
-  
+
   .card h3 {
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 15px;
     font-weight: bold;
   }
   
   .card p {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.4;
-  }  
+    color: #1F2927;
+  }
+} 
