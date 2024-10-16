@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.slick-slide > div {
+     margin: 0 80px; 
+}
+
+@media screen and (min-width: 1350px) and (max-width: 1500px) {
+    /* CSS rules */
+    .slick-slide > div {
+        margin: 0 20px;
+    }
+
+  }
+
+  @media screen and (min-width: 1250px) and (max-width: 1350px) {
+    /* CSS rules */
+    .slick-slide > div {
+        margin: 0 4px;
+    }
+    
+  }

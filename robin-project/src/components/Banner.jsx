@@ -1,4 +1,5 @@
-import { useState } from "react"
+import React from "react";
+import './Banner.css'
 
  export const cardData = [
   {
@@ -35,16 +36,16 @@ import { useState } from "react"
 
 export const Banner = () => {
   return (
-    <section className="why-choose-us">
-      <h2>Why Choose Us</h2>
-      <div className="card-container">
+    <section className="bg-slate-100 w-full py-14">
+      <h2 className="font-bold text-2xl mb-5 text-center">Why Choose Us</h2>
+      <div className="grid grid-cols-2 md:grid-cols-4 w-64 h-72 gap-4">
         {cardData.map((card) => (
-          <div className="card" key={card.id}>
-            <div className="icon">
-              <img src={card.iconSrc} alt={card.altText} />
+          <div className="bg-[#3AB0FF] text-white p-5 rounded-2xl text-center transition-transform duration-300 ease-in mt-5" key={card.id}>
+            <div className="mb-5 justify-center items-center">
+              <img src={card.iconSrc} alt={card.altText} className="w-12 h-12 inline-flex justify-center items-center"/>
             </div>
-            <h3>{card.title}</h3>
-            <p>{card.description}</p>
+            <h3 className="text-2xl mb-3.5 font-bold">{card.title}</h3>
+            <p className="text-base text-[#1F2937]">{card.description}</p>
           </div>
         ))}
       </div>
