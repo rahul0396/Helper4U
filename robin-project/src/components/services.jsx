@@ -1,84 +1,102 @@
 // src/components/Services.jsx
-
-import { useState } from "react";
+import React from "react";
+import "./services.css"
 
 export const Services = () => {
-  return (
-    <div className="services-container">
-      <div className="services-inner-container">
-        <div className="title-section">
-          <h1 className="title">
-            <p className="subtitle">Helper4U Services</p>
-          </h1>
-        </div>
-
-        {/* Services Section */}
-        <div className="services-section">
-          {/* Service 1 */}
-          <div className="service-item">
-            <a href="/hiring-services/hire-for-long-term">
-              <div className="service-content">
-                <img
-                  src="https://helper4u.in/web-img/img/how_it_works/1.jpg"
-                  className="service-image"
-                  alt="Hire Maid, Nanny, Cook, Caregiver, Driver with replacement, refund and verification"
-                />
-                <p className="service-text">
-                  Premium Hiring Service
-                </p>
-              </div>
-            </a>
+    return (
+      <div className="services-container">
+        <div className="services-inner-container">
+          <div className="title-section">
+            <h1 className="title">
+              <p className="subtitle">Helper4U Services</p>
+            </h1>
           </div>
-
-          {/* Service 2 */}
-          <div className="service-item">
-            <a href="/hire-for-short-term">
-              <div className="service-content">
-                <img
-                  src="https://helper4u.in/web-img/img/how_it_works/2.jpg"
-                  className="service-image"
-                  alt="Hire Maid, Nanny, Cook, Caregiver, Driver near you in cost-effective way"
-                />
-                <p className="service-text">
-                  Hire for Few Days
-                </p>
-              </div>
-            </a>
-          </div>
-
-          {/* Service 3 */}
-          <div className="service-item">
-            <a href="/verify-helpers">
-              <div className="service-content">
-                <img
-                  src="https://helper4u.in/web-img/img/how_it_works/3.jpg"
-                  className="service-image"
-                  alt="Verify your house help, staff, tenants in a simple manner"
-                />
-                <p className="service-text">
-                  Verify Staff
-                </p>
-              </div>
-            </a>
-          </div>
-
-          {/* Service 4 */}
-          <div className="service-item">
-            <a href="/help4parents">
-              <div className="service-content">
-                <img
-                  src="https://helper4u.in/web-img/img/how_it_works/4.jpg"
-                  className="service-image"
-                  alt="Find caregiver, maid, or Cook to help your parents"
-                />
-                <p className="service-text">
-                  Help4Parents
-                </p>
-              </div>
-            </a>
+  
+          {/* Services Section */}
+          <div className="services-section">
+            {/* Service 1 */}
+            <div className="service-item">
+              <a href="/hiring-services/hire-for-long-term">
+                <div className="service-content">
+                  <img
+                    src="https://helper4u.in/web-img/img/how_it_works/1.jpg"
+                    className="service-image"
+                    alt="Hire Maid, Nanny, Cook, Caregiver, Driver with replacement, refund and verification"
+                  />
+                  <p className="service-text pt-2 pr-2 mt-2 mr-2 text-xs text-center font-bold xl:text-lg lg:text-sm md:text-base sm:text-xs">
+                    Premium Hiring Service
+                  </p>
+                </div>
+              </a>
+            </div>
+  
+            {/* Service 2 */}
+            <div className="service-item">
+              <a href="/hire-for-short-term">
+                <div className="service-content">
+                  <img
+                    src="https://helper4u.in/web-img/img/how_it_works/2.jpg"
+                    className="service-image"
+                    alt="Hire Maid, Nanny, Cook, Caregiver, Driver near you in cost-effective way"
+                  />
+                  <p className="service-text pt-2 pr-2 mt-2 mr-2 text-xs text-center font-bold xl:text-lg lg:text-sm md:text-base">
+                    Hire for Few Days
+                  </p>
+                </div>
+              </a>
+            </div>
+  
+            {/* Service 3 */}
+            <div className="service-item">
+              <a href="/verify-helpers">
+                <div className="service-content">
+                  <img
+                    src="https://helper4u.in/web-img/img/how_it_works/3.jpg"
+                    className="service-image"
+                    alt="Verify your house help, staff, tenants in a simple manner"
+                  />
+                  <p className="service-text pt-2 pr-2 mt-2 mr-2 text-xs text-center font-bold xl:text-lg lg:text-sm md:text-base">
+                    Verify Staff
+                  </p>
+                </div>
+              </a>
+            </div>
+  
+            {/* Service 4 */}
+            <div className="service-item">
+              <a href="/help4parents">
+                <div className="service-content">
+                  <img
+                    src="https://helper4u.in/web-img/img/how_it_works/4.jpg"
+                    className="service-image"
+                    alt="Find caregiver, maid, or Cook to help your parents"
+                  />
+                  <p className="service-text pt-2 pr-2 mt-2 mr-2 text-xs text-center font-bold xl:text-lg lg:text-sm md:text-base">
+                    Help4Parents
+                  </p>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  );
-};
+    );
+  };
+  
+  
+  export const Helper4UServiceCard = ({ title, link, imageSrc, altText }) => {
+    return (
+      <div className="w-[50%]">
+        <div className="w-[100%] shadow-xl pt-2">
+          <a href={link}>
+            <div className="border border-b-gray-300 p-2 bg-slate-100 rounded">
+              <img src={imageSrc} className="w-[95%] mx-auto" alt={altText} />
+              <p className="p-2 m-2 text-bold md:text-sm lg:text-base text-sm sm:text-base text-center">
+                {title}
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    );
+  };
